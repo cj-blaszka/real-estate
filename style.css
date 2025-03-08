@@ -1,0 +1,71 @@
+/* General Styles for the page */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.content-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+/* Hero Section */
+header {
+    position: relative;
+    background-color: #1E40AF; /* Tailwind's bg-blue-500 */
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    background-size: cover;
+    background-position: center;
+}
+
+header .absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .relative {
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 1rem;
+}
+
+header a {
+    margin-top: 1.5rem;
+    display: inline-block;
+    background-color: white;
+    color: #1E40AF;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2D3748; /* Tailwind's bg-gray-800 */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}

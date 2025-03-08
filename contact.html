@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <nav class="bg-blue-600 p-4 text-white relative">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Company Name</a>
+    
+            <!-- Navigation Links (Hidden on Mobile, Visible on Desktop) -->
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="where-we-buy.html" class="hover:underline">Where We Buy</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+    
+            <!-- Hamburger Button (Hidden on Desktop) -->
+            <button id="menu-toggle" class="block md:hidden focus:outline-none">☰</button>
+        </div>
+    
+        <!-- Mobile Menu (Slides in from Right) -->
+        <div id="mobile-menu" class="fixed top-0 right-0 w-2/3 h-full bg-white text-black shadow-lg transform translate-x-full transition-transform duration-300 md:hidden">
+            <button id="menu-close" class="absolute top-4 right-4 text-xl">✖</button>
+            <ul class="p-6 space-y-4 text-lg">
+                <li><a href="index.html" class="block">Home</a></li>
+                <li><a href="about.html" class="block">About</a></li>
+                <li><a href="where-we-buy.html" class="block">Where We Buy</a></li>
+                <li><a href="contact.html" class="block">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section class="container mx-auto p-6 flex-grow">
+        <h1 class="text-3xl font-bold text-center">Contact Us</h1>
+        <form id="contact-form" class="mt-6 bg-white shadow-md rounded p-6 max-w-lg mx-auto">
+            <label class="block mb-2">Name</label>
+            <input type="text" id="name" class="w-full p-2 border rounded" required>
+
+            <label class="block mt-4 mb-2">Email</label>
+            <input type="email" id="email" class="w-full p-2 border rounded" required>
+
+            <label class="block mt-4 mb-2">Message</label>
+            <textarea id="message" class="w-full p-2 border rounded" required></textarea>
+
+            <button type="submit" class="mt-4 bg-blue-500 text-white p-2 rounded w-full">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-10">
+        <p>&copy; 2025 Real Estate Funnel. All rights reserved.</p>
+        <p>Contact: ***update this to be phone number*** | ***update this to be email***</p>
+    </footer>
+
+</body>
+</html>

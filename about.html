@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about [Company Name], a trusted real estate investing company that buys homes quickly and hassle-free. Read more about our mission and values.">
+    <meta name="keywords" content="real estate, home buying, fast cash offer, selling home, real estate investing, about us">
+    <meta name="author" content="[Company Name]">
+    <meta property="og:title" content="About Us - [Company Name]">
+    <meta property="og:description" content="Discover the mission and values behind [Company Name]. We are a trusted real estate investing company that offers quick home buying solutions.">
+    <meta property="og:image" content="assets/images/og-image.jpg"> <!-- Replace with an actual image URL for social sharing -->
+    <meta property="og:url" content="https://www.example.com/about.html"> <!-- Replace with your actual URL -->
+    <title>About Us - [Company Name]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 text-white relative">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">Company Name</a>
+    
+            <!-- Navigation Links (Hidden on Mobile, Visible on Desktop) -->
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="where-we-buy.html" class="hover:underline">Where We Buy</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+    
+            <!-- Hamburger Button (Hidden on Desktop) -->
+            <button id="menu-toggle" class="block md:hidden focus:outline-none">☰</button>
+        </div>
+    
+        <!-- Mobile Menu (Slides in from Right) -->
+        <div id="mobile-menu" class="fixed top-0 right-0 w-2/3 h-full bg-white text-black shadow-lg transform translate-x-full transition-transform duration-300 md:hidden">
+            <button id="menu-close" class="absolute top-4 right-4 text-xl">✖</button>
+            <ul class="p-6 space-y-4 text-lg">
+                <li><a href="index.html" class="block">Home</a></li>
+                <li><a href="about.html" class="block">About</a></li>
+                <li><a href="where-we-buy.html" class="block">Where We Buy</a></li>
+                <li><a href="contact.html" class="block">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- About Us Section -->
+    <section class="container mx-auto p-6 text-center">
+        <h1 class="text-3xl font-bold">About Us</h1>
+        <p class="mt-4 text-lg">At [Company Name], we specialize in buying homes quickly and hassle-free. Whether you're looking to sell due to relocation, financial hardship, or any other reason, we're here to help. Our mission is to provide homeowners with a fast, fair, and stress-free process for selling their property.</p>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">Our History</h2>
+            <p class="mt-4">[Insert your company history here. Provide a brief story about how your company was founded, what inspired its creation, and any major milestones you've reached.]</p>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">Our Mission</h2>
+            <p class="mt-4">Our mission is to empower homeowners by offering them a fast, fair, and transparent way to sell their homes. We aim to simplify the home-selling process and help homeowners move forward with their lives, free from the burden of property ownership.</p>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">Our Values</h2>
+            <ul class="mt-4 list-disc list-inside text-center">
+                <li>Integrity - We operate with honesty and transparency, ensuring that every client is treated fairly.</li>
+                <li>Customer Focus - Our clients' needs come first, and we strive to deliver the best possible experience.</li>
+                <li>Efficiency - We pride ourselves on quick responses, fast offers, and rapid closings to get our clients moving forward faster.</li>
+                <li>Commitment - We're dedicated to providing reliable solutions to homeowners facing various challenges in the real estate market.</li>
+            </ul>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">Why Choose Us?</h2>
+            <p class="mt-4">We offer a no-obligation cash offer and close on your timeline. Our process is simple, fast, and hassle-free, and we are committed to giving you a fair price for your property. Whether you're facing foreclosure, need to relocate quickly, or just want to avoid the lengthy process of traditional home sales, we're here to help.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-10">
+        <p>&copy; 2025 Company Name. All rights reserved.</p>
+        <p>Contact: [Insert Phone Number] | [Insert Email Address]</p> <!-- Replace with actual contact information -->
+    </footer>
+
+</body>
+</html>

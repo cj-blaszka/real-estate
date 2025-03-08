@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Funnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Wrapper to ensure the footer stays at the bottom -->
+    <div class="content-wrapper">
+
+        <!-- Navbar -->
+        <nav class="bg-blue-500 p-4 text-white relative">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold">CCMD Home Buyers</a>
+        
+                <!-- Navigation Links (Hidden on Mobile, Visible on Desktop) -->
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About</a></li>
+                    <li><a href="where-we-buy.html" class="hover:underline">Where We Buy</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+        
+                <!-- Hamburger Button (Hidden on Desktop) -->
+                <button id="menu-toggle" class="block md:hidden focus:outline-none">☰</button>
+            </div>
+        
+            <!-- Mobile Menu (Slides in from Right) -->
+            <div id="mobile-menu" class="fixed top-0 right-0 w-2/3 h-full bg-white text-black shadow-lg transform translate-x-full transition-transform duration-300 md:hidden">
+                <button id="menu-close" class="absolute top-4 right-4 text-xl">✖</button>
+                <ul class="p-6 space-y-4 text-lg">
+                    <li><a href="index.html" class="block">Home</a></li>
+                    <li><a href="about.html" class="block">About</a></li>
+                    <li><a href="where-we-buy.html" class="block">Where We Buy</a></li>
+                    <li><a href="contact.html" class="block">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Hero Section with Overlay and Split Layout -->
+        <header class="relative bg-blue-500 text-white text-center py-20 bg-cover bg-center" style="background-image: url('assets/images/homePageImage.jpg');">
+            <!-- Overlay Tint -->
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10 container mx-auto flex justify-between items-center px-6">
+                <!-- Text Section (Left Side) -->
+                <div class="w-full md:w-1/2 text-left">
+                    <h1 class="text-4xl font-bold">We Buy Houses Fast & Hassle-Free</h1>
+                    <p class="mt-4 text-lg">Sell your home quickly with a fair cash offer. No fees or commissions!</p>
+                    <a href="contact.html" class="mt-6 inline-block bg-white text-blue-600 px-6 py-2 rounded-full font-semibold">Get Your Offer</a>
+                </div>
+                <!-- Contact Form Section (Right Side) -->
+                <div class="w-full md:w-1/2 mt-8 md:mt-0">
+                    <form id="contact-form" class="bg-white p-6 shadow-md rounded">
+                        <label class="block mb-2">Name</label>
+                        <input type="text" id="name" class="w-full p-2 border rounded" placeholder="Your Name" required>
+
+                        <label class="block mt-4 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full p-2 border rounded" placeholder="Your Email Address" required>
+
+                        <label class="block mt-4 mb-2">Message</label>
+                        <textarea id="message" class="w-full p-2 border rounded" placeholder="Your Message" required></textarea>
+
+                        <button type="submit" class="mt-4 bg-blue-600 text-white p-2 rounded w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <section class="main-content p-6">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold">Why Choose Us?</h2>
+                <p class="mt-4 text-lg">We provide a simple, fast, and hassle-free way to sell your property. Our team is dedicated to ensuring you get the best offer without the stress and long wait of traditional home sales.</p>
+
+                <div class="mt-8">
+                    <h3 class="text-2xl font-semibold">How It Works</h3>
+                    <ul class="mt-4 list-disc list-inside text-center">
+                        <li>Contact us with your property details.</li>
+                        <li>We schedule a quick property assessment.</li>
+                        <li>Receive a fair, cash offer within 24 hours.</li>
+                        <li>Close the deal on your timeline, fast and easy!</li>
+                    </ul>
+                </div>
+
+                <div class="mt-8">
+                    <h3 class="text-2xl font-semibold">Areas We Serve</h3>
+                    <p class="mt-4">We buy homes in multiple cities and counties. Whether you're looking to sell in the city or suburbs, we have you covered!</p>
+                </div>
+
+                <div class="mt-8">
+                    <h3 class="text-2xl font-semibold">Get Started Today!</h3>
+                    <p class="mt-4">If you're ready to sell your home quickly, fill out our form or call us today to get started!</p>
+                    <a href="contact.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white p-6 text-center mt-10">
+            <p>&copy; 2025 Company Name. All rights reserved.</p>
+            <p>Contact: 123-456-7890 | email@example.com</p>
+        </footer>
+    </div>
+
+</body>
+</html>
